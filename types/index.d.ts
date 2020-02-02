@@ -1,8 +1,8 @@
 export = numericaljs;
 
-declare function numericaljs (): Numerical.NumericalJs
+declare function numericaljs (): numericaljs.NumericalJs
 
-declare namespace Numerical {
+declare namespace numericaljs {
   class NumericalJs {
     constructor ()
 
