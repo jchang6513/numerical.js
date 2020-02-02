@@ -1,0 +1,19 @@
+{
+  "name": "numerical.js",
+  "version": "1.0.0",
+  "description": "Numerical & Scientific Computing with Javascript",
+  "main": "index.js",
+  "repository": "git@github.com:jchang6513/numerical.js.git",
+  "author": "Yi-Wei Chang <jchang6513@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/node": "^7.8.4",
+    "@babel/preset-env": "^7.8.4",
+    "babel": "^6.23.0",
+    "babel-core": "^6.26.3",
+    "babel-jest": "^25.1.0",
+    "jest": "^25.1.0",
+    "typescript": "^3.7.5"
+  }
+}
