@@ -2,6 +2,8 @@ const numericaljs = () => {
   return new NumericalJs()
 }
 
+const PI_2 = Math.PI / 2;
+
 class NumericalJs {
   constructor() {
   }
@@ -26,6 +28,22 @@ class NumericalJs {
     }
 
     return arr
+  }
+
+  sin(x = []) {
+    return x.map(i => Math.sin(i));
+  }
+
+  cos(x = []) {
+    return x.map(i => Math.cos(i));
+  }
+
+  tan(x = []) {
+    return x.map(i => {
+      return i % PI_2 === 0 && i !== 0
+        ? NaN
+        : Math.tan(i);
+    });
   }
 }
 
