@@ -30,6 +30,30 @@ class NumericalJs {
     return arr
   }
 
+  multiply(x1, x2) {
+    if (!Array.isArray(x1) || !Array.isArray(x2)) {
+      throw new Error('The variable type is invalid, please passed array instead.');
+    }
+
+    if (x1.length !== x2.length) {
+      throw new Error('Arrays\' length must be equal.');
+    }
+
+    return x1.map((x, index) => x * x2[index]);
+  }
+
+  divide(x1, x2) {
+    if (!Array.isArray(x1) || !Array.isArray(x2)) {
+      throw new Error('The variable type is invalid, please passed array instead.');
+    }
+
+    if (x1.length !== x2.length) {
+      throw new Error('Arrays\' length must be equal.');
+    }
+
+    return x1.map((x, index) => x / x2[index]);
+  }
+
   sin(x = []) {
     return x.map(i => Math.sin(i));
   }
