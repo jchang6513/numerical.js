@@ -1,14 +1,10 @@
-const numericaljs = () => {
-  return new NumericalJs()
-}
-
 const PI_2 = Math.PI / 2;
 
 class NumericalJs {
   constructor() {
   }
 
-  array(r1, r2, interval = 1) {
+  array(r1?: number, r2?: number, interval: number = 1) {
     if (r1 === undefined && r2 === undefined) { return [0]; }
 
     const withRange = ( r1 !== undefined && r2 !== undefined );
@@ -71,6 +67,6 @@ class NumericalJs {
   }
 }
 
-numericaljs.prototype = NumericalJs.prototype
+const numericaljs = new NumericalJs();
 
 export default numericaljs

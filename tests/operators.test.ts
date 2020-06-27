@@ -1,6 +1,4 @@
-import numericaljs from "../src";
-
-const numerical = new numericaljs();
+import numerical from "../src/numerical";
 
 describe('Return calculation results of two arrays', () => {
   describe('multiply', () => {
